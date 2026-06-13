@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E533FH8W97"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E533FH8W97');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mosanci Innenausbau | Bald verfügbar</title>
+  <meta name="description" content="Die neue Website von Mosanci Innenausbau ist bald verfügbar. Jetzt vormerken und zum Launch informiert werden.">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --red:#d90404;
+      --red-dark:#9f0000;
+      --red-soft:#fff0f0;
+      --black:#08090b;
+      --dark:#222529;
+      --ink:#14161a;
+      --text:#1f2328;
+      --muted:#6f757c;
+      --line:#eef0f2;
+      --panel:#ececec;
+      --white:#fff;
+      --shadow-red:0 20px 55px rgba(217,4,4,.22);
+      --shadow-black:0 22px 60px rgba(0,0,0,.18);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:'Outfit',sans-serif;
+      background:
+        radial-gradient(circle at 15% 5%, rgba(217,4,4,.07), transparent 28%),
+        radial-gradient(circle at 90% 18%, rgba(0,0,0,.06), transparent 30%),
+        #fff;
+      color:var(--text);
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      z-index:0;
+      background-image:
+        linear-gradient(rgba(217,4,4,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(217,4,4,.035) 1px, transparent 1px);
+      background-size:42px 42px;
+      mask-image:linear-gradient(to bottom, rgba(0,0,0,.75), transparent 70%);
+    }
+
+    img{max-width:100%;display:block;height:auto}
+    a{text-decoration:none;color:inherit}
+    button,input,select,textarea{font:inherit}
+
+    .scrollProgress{
+      position:fixed;
+      top:0;
+      left:0;
+      height:4px;
+      width:0%;
+      z-index:10050;
+      background:linear-gradient(90deg,var(--black),var(--red),#ff3b3b);
+      box-shadow:0 0 18px rgba(217,4,4,.55);
+      pointer-events:none;
+    }
+
+    .particleLayer{
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      overflow:hidden;
+      z-index:1;
+    }
+
+    .particleLayer span{
+      position:absolute;
+      bottom:-40px;
+      width:6px;
+      height:6px;
+      border-radius:50%;
+      background:rgba(217,4,4,.18);
+      animation:particleFloat linear infinite;
+    }
+
+    @keyframes particleFloat{
+      to{transform:translateY(-110vh) rotate(360deg);opacity:0}
+    }
+
+    .topHeader{
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      z-index:9999;
+      height:92px;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(226,229,232,.9);
+      box-shadow:0 12px 28px rgba(0,0,0,.10);
+    }
+
+    .topHeader::after{
+      content:"";
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:-38px;
+      height:38px;
+      pointer-events:none;
+      background:linear-gradient(to bottom, rgba(0,0,0,.22), rgba(0,0,0,0));
+      filter:blur(10px);
+      opacity:.35;
+    }
+
+    .navwrap{
+      width:min(1180px,100%);
+      height:100%;
+      margin:0 auto;
+      padding:0 16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+    }
+
+    .logoLock{
+      display:flex;
+      align-items:center;
+      gap:0;
+      min-width:0;
+    }
+
+    .logoImage{
+      height:69px;
+      width:auto;
+      object-fit:contain;
+      flex:0 0 auto;
+    }
+
+    .brandText{
+      min-width:0;
+      display:grid;
+      gap:5px;
+    }
+
+    .brandMain{
+      display:block;
+      font-size:30px;
+      line-height:.92;
+      font-weight:900;
+      letter-spacing:.105em;
+      text-transform:uppercase;
+      color:var(--black);
+      text-shadow:0 10px 24px rgba(0,0,0,.10);
+    }
+
+    .brandMain .brandRed{
+      color:var(--red);
+    }
+
+    .brandSub{
+      display:block;
+      width:max-content;
+      max-width:100%;
+      padding-top:6px;
+      border-top:3px solid var(--black);
+      font-size:11px;
+      line-height:1;
+      color:var(--red);
+      font-weight:900;
+      letter-spacing:.38em;
+      text-transform:uppercase;
+    }
+
+    .navMeta{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      white-space:nowrap;
+    }
+
+    .statusPill,
+    .ghostBtn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      padding:0 16px;
+      border-radius:1px;
+      font-weight:900;
+      transition:.2s ease;
+    }
+
+    .statusPill{
+      background:#f1f3f5;
+      color:#2e3338;
+    }
+
+    .ghostBtn{
+      position:relative;
+      overflow:hidden;
+      background:linear-gradient(135deg,var(--red),#ff2b2b,var(--red-dark));
+      color:#fff;
+      box-shadow:var(--shadow-red);
+      animation:mosanciPulse 3s ease-in-out infinite;
+    }
+
+    .ghostBtn::after{
+      content:"";
+      position:absolute;
+      inset:-30% -60%;
+      background:linear-gradient(90deg, transparent, rgba(255,255,255,.55), transparent);
+      transform:rotate(16deg) translateX(-90%);
+      animation:mosanciShine 3.7s ease-in-out infinite;
+    }
+
+    .ghostBtn span{
+      position:relative;
+      z-index:1;
+    }
+
+    .ghostBtn:hover{
+      transform:translateY(-2px);
+      background-position:100% 50%;
+    }
+
+    .pageContent{
+      position:relative;
+      z-index:2;
+      padding-top:130px;
+      animation:fadeIn .18s ease;
+    }
+
+    @keyframes fadeIn{
+      from{opacity:0;transform:translateY(6px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    .hero{
+      position:relative;
+      isolation:isolate;
+      overflow:hidden;
+      padding:0 18px 44px;
+    }
+
+    .hero::before,
+    .hero::after{
+      content:"";
+      position:absolute;
+      width:320px;
+      height:320px;
+      border-radius:50%;
+      z-index:1;
+      pointer-events:none;
+      filter:blur(10px);
+      opacity:.55;
+    }
+
+    .hero::before{
+      background:radial-gradient(circle, rgba(217,4,4,.18), transparent 65%);
+      top:95px;
+      left:-90px;
+      animation:floatOrb 9s ease-in-out infinite;
+    }
+
+    .hero::after{
+      background:radial-gradient(circle, rgba(0,0,0,.16), transparent 68%);
+      top:310px;
+      right:-95px;
+      animation:floatOrb 11s ease-in-out infinite reverse;
+    }
+
+    @keyframes floatOrb{
+      0%,100%{transform:translate3d(0,0,0) scale(1)}
+      50%{transform:translate3d(25px,-22px,0) scale(1.08)}
+    }
+
+    .heroShell{
+      position:relative;
+      z-index:2;
+      width:min(1180px,100%);
+      margin:0 auto;
+      overflow:hidden;
+      border-radius:24px;
+      background:#fff;
+      border:1px solid rgba(217,4,4,.10);
+      box-shadow:var(--shadow-black);
+    }
+
+    .heroImage{
+      min-height:420px;
+      position:relative;
+      overflow:hidden;
+      background:
+        url("assets/bathroom.jpg") center/cover no-repeat,
+        url("bathroom.jpg") center/cover no-repeat;
+      animation:heroZoom 16s ease-in-out infinite alternate;
+    }
+
+    .heroImage::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(120deg, transparent 0%, rgba(255,255,255,.16) 45%, transparent 55%);
+      transform:translateX(-100%);
+      animation:heroSweep 5.8s ease-in-out infinite;
+    }
+
+    @keyframes heroZoom{
+      from{transform:scale(1)}
+      to{transform:scale(1.035)}
+    }
+
+    @keyframes heroSweep{
+      0%,45%{transform:translateX(-105%)}
+      75%,100%{transform:translateX(105%)}
+    }
+
+    .imageBadge{
+      position:absolute;
+      left:34px;
+      top:30px;
+      bottom:auto;
+      z-index:2;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:14px 18px;
+      background:rgba(255,255,255,.94);
+      color:var(--ink);
+      font-size:13px;
+      font-weight:900;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      box-shadow:0 14px 34px rgba(0,0,0,.18),0 10px 24px rgba(217,4,4,.12);
+      border-left:5px solid var(--red);
+      overflow:hidden;
+      animation:badgeFloatIn .8s .25s cubic-bezier(.2,1,.2,1) both, badgePremiumPulse 3.2s 1.2s ease-in-out infinite;
+    }
+
+    .imageBadge::after{
+      content:"";
+      position:absolute;
+      inset:-35% -55%;
+      background:linear-gradient(90deg,transparent,rgba(217,4,4,.16),rgba(255,255,255,.8),transparent);
+      transform:rotate(16deg) translateX(-90%);
+      animation:badgeShine 4s ease-in-out infinite;
+      pointer-events:none;
+    }
+
+    @keyframes badgeFloatIn{
+      from{opacity:0;transform:translateY(-18px) scale(.96)}
+      to{opacity:1;transform:translateY(0) scale(1)}
+    }
+
+    @keyframes badgePremiumPulse{
+      0%,100%{transform:translateY(0);box-shadow:0 14px 34px rgba(0,0,0,.18),0 10px 24px rgba(217,4,4,.12)}
+      50%{transform:translateY(-4px);box-shadow:0 20px 46px rgba(0,0,0,.22),0 16px 36px rgba(217,4,4,.22)}
+    }
+
+    @keyframes badgeShine{
+      0%,38%{transform:rotate(16deg) translateX(-90%)}
+      64%,100%{transform:rotate(16deg) translateX(90%)}
+    }
+
+    .heroBody{
+      position:relative;
+      z-index:3;
+      margin-top:-80px;
+      padding:110px 34px 38px;
+      display:grid;
+      grid-template-columns:1.08fr .92fr;
+      gap:30px;
+      align-items:start;
+      background:
+        linear-gradient(180deg,rgba(255,255,255,.94),rgba(245,245,246,.98)),
+        radial-gradient(circle at 50% 0%, rgba(217,4,4,.14), transparent 46%);
+      box-shadow:0 -24px 60px rgba(0,0,0,.18);
+      border-top-left-radius:24px;
+      border-top-right-radius:24px;
+    }
+
+    .liveBanner{
+      display:inline-flex;
+      align-items:center;
+      gap:18px;
+      margin:0 0 28px;
+      padding:14px 22px 14px 18px;
+      background:rgba(255,255,255,.92);
+      border:1px solid rgba(217,4,4,.10);
+      box-shadow:0 12px 26px rgba(0,0,0,.08);
+      backdrop-filter:blur(8px);
+      max-width:100%;
+    }
+
+    .livePulseWrap{
+      width:38px;
+      height:38px;
+      border-radius:999px;
+      background:rgba(217,4,4,.12);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      position:relative;
+      flex:0 0 38px;
+    }
+
+    .livePulseWrap::before,
+    .livePulseWrap::after{
+      content:"";
+      position:absolute;
+      inset:50%;
+      width:12px;
+      height:12px;
+      border-radius:999px;
+      transform:translate(-50%,-50%);
+      border:2px solid rgba(217,4,4,.35);
+      animation:liveRing 2s infinite ease-out;
+    }
+
+    .livePulseWrap::after{animation-delay:1s}
+
+    .liveDot{
+      width:18px;
+      height:18px;
+      border-radius:999px;
+      background:var(--red);
+      box-shadow:0 0 0 0 rgba(217,4,4,.55);
+      animation:liveDotPulse 1.4s infinite ease-in-out;
+      position:relative;
+      z-index:2;
+    }
+
+    @keyframes liveDotPulse{
+      0%{transform:scale(1);box-shadow:0 0 0 0 rgba(217,4,4,.55)}
+      50%{transform:scale(1.12);box-shadow:0 0 0 20px rgba(217,4,4,0)}
+      100%{transform:scale(1);box-shadow:0 0 0 0 rgba(217,4,4,0)}
+    }
+
+    @keyframes liveRing{
+      0%{width:12px;height:12px;opacity:.7}
+      100%{width:46px;height:46px;opacity:0}
+    }
+
+    .liveText{
+      font-size:18px;
+      font-weight:900;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      color:#353b43;
+      white-space:nowrap;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 14px;
+      background:#fff;
+      border:1px solid var(--line);
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+      color:#394049;
+      margin-bottom:18px;
+      max-width:100%;
+      flex-wrap:wrap;
+    }
+
+    h1{
+      margin:0;
+      font-size:clamp(34px,6vw,68px);
+      line-height:1;
+      font-weight:900;
+      letter-spacing:-.03em;
+      max-width:760px;
+      background:linear-gradient(90deg,#070707 0%, #070707 30%, var(--red) 48%, var(--red) 66%, #070707 84%);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+      text-shadow:0 14px 35px rgba(0,0,0,.08);
+      animation:titlePop .8s cubic-bezier(.2,1,.2,1) both;
+    }
+
+    h1::after{
+      content:"";
+      display:block;
+      width:120px;
+      height:5px;
+      margin:20px 0 0;
+      border-radius:999px;
+      background:linear-gradient(90deg,var(--black),var(--red),var(--black));
+      animation:lineGrow .9s .25s cubic-bezier(.2,1,.2,1) both;
+    }
+
+    @keyframes titlePop{
+      from{opacity:0;transform:translateY(24px) scale(.96)}
+      to{opacity:1;transform:translateY(0) scale(1)}
+    }
+
+    @keyframes lineGrow{
+      from{opacity:0;transform:scaleX(0)}
+      to{opacity:1;transform:scaleX(1)}
+    }
+
+    .lead{
+      margin:22px 0 0;
+      max-width:700px;
+      color:var(--muted);
+      font-size:17px;
+      line-height:1.8;
+      font-weight:600;
+      animation:fadeRise .8s .18s cubic-bezier(.2,1,.2,1) both;
+    }
+
+    @keyframes fadeRise{
+      from{opacity:0;transform:translateY(18px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    .heroActions{
+      display:flex;
+      gap:16px;
+      flex-wrap:wrap;
+      margin-top:34px;
+      animation:fadeRise .8s .28s cubic-bezier(.2,1,.2,1) both;
+    }
+
+    .btn,
+    .formSubmit{
+      min-height:54px;
+      padding:0 28px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      border:none;
+      border-radius:0;
+      cursor:pointer;
+      font-weight:900;
+      letter-spacing:.01em;
+      transition:.2s ease;
+      text-align:center;
+    }
+
+    .btnPrimary,
+    .formSubmit{
+      position:relative;
+      overflow:hidden;
+      background:linear-gradient(135deg,var(--red),#ff2b2b,var(--red-dark));
+      color:#fff;
+      box-shadow:var(--shadow-red);
+      animation:mosanciPulse 3s ease-in-out infinite;
+    }
+
+    .btnPrimary::after,
+    .formSubmit::after{
+      content:"";
+      position:absolute;
+      inset:-30% -60%;
+      background:linear-gradient(90deg, transparent, rgba(255,255,255,.55), transparent);
+      transform:rotate(16deg) translateX(-90%);
+      animation:mosanciShine 3.7s ease-in-out infinite;
+    }
+
+    .btnPrimary span,
+    .formSubmit span{
+      position:relative;
+      z-index:1;
+    }
+
+    .btnPrimary:hover,
+    .formSubmit:hover{
+      transform:translateY(-4px) scale(1.015);
+    }
+
+    @keyframes mosanciPulse{
+      0%,100%{box-shadow:0 14px 35px rgba(217,4,4,.23)}
+      50%{box-shadow:0 20px 52px rgba(217,4,4,.38)}
+    }
+
+    @keyframes mosanciShine{
+      0%,35%{transform:rotate(16deg) translateX(-90%)}
+      60%,100%{transform:rotate(16deg) translateX(90%)}
+    }
+
+    .btnSecondary{
+      background:linear-gradient(135deg,#050505,#24272c);
+      color:#fff;
+      box-shadow:0 12px 28px rgba(0,0,0,.18);
+    }
+
+    .btnSecondary:hover{
+      transform:translateY(-2px);
+      background:linear-gradient(135deg,var(--red-dark),var(--black));
+    }
+
+    .miniStats{
+      margin-top:28px;
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:14px;
+      animation:fadeRise .8s .38s cubic-bezier(.2,1,.2,1) both;
+    }
+
+    .miniStat{
+      position:relative;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid rgba(217,4,4,.08);
+      padding:16px;
+      box-shadow:0 10px 22px rgba(0,0,0,.08);
+      transition:.2s ease;
+    }
+
+    .miniStat::after{
+      content:"";
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:0;
+      height:4px;
+      background:linear-gradient(90deg,var(--black),var(--red),#ff3535);
+      transform:scaleX(0);
+      transform-origin:left;
+      transition:.25s ease;
+    }
+
+    .miniStat:hover{
+      transform:translateY(-5px);
+      border-color:rgba(217,4,4,.30);
+      box-shadow:0 22px 55px rgba(0,0,0,.14),0 10px 24px rgba(217,4,4,.12);
+    }
+
+    .miniStat:hover::after{transform:scaleX(1)}
+
+    .miniStat strong{
+      display:block;
+      font-size:20px;
+      font-weight:900;
+      margin-bottom:5px;
+      color:var(--ink);
+      word-break:break-word;
+    }
+
+    .miniStat span{
+      color:var(--muted);
+      font-size:13px;
+      font-weight:700;
+      line-height:1.5;
+    }
+
+    .signupCard{
+      position:relative;
+      overflow:hidden;
+      background:
+        linear-gradient(180deg,rgba(255,255,255,.98),rgba(255,255,255,.92)),
+        radial-gradient(circle at 0% 0%, rgba(217,4,4,.14), transparent 36%);
+      border:1px solid rgba(217,4,4,.10);
+      padding:30px;
+      box-shadow:0 18px 48px rgba(0,0,0,.10);
+      min-width:0;
+      animation:fadeRise .8s .26s cubic-bezier(.2,1,.2,1) both;
+    }
+
+    .signupCard::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:radial-gradient(circle at var(--mx,50%) var(--my,0%), rgba(217,4,4,.14), transparent 34%);
+      opacity:0;
+      transition:.25s ease;
+      pointer-events:none;
+    }
+
+    .signupCard:hover::before{opacity:1}
+
+    .signupCard h2,
+    .signupCard p,
+    .signupCard form,
+    .successBox,
+    .errorBox,
+    .privacyNote{
+      position:relative;
+      z-index:1;
+    }
+
+    .signupCard h2{
+      margin:0 0 10px;
+      font-size:28px;
+      line-height:1.1;
+      font-weight:900;
+      letter-spacing:-.03em;
+      color:var(--ink);
+    }
+
+    .signupCard h2::after{
+      content:"";
+      display:block;
+      width:72px;
+      height:4px;
+      margin:14px 0 0;
+      border-radius:999px;
+      background:linear-gradient(90deg,var(--black),var(--red));
+    }
+
+    .signupCard p{
+      margin:0 0 22px;
+      color:var(--muted);
+      line-height:1.7;
+      font-weight:600;
+    }
+
+    .formRow{
+      display:grid;
+      gap:12px;
+    }
+
+    .input,
+    .select,
+    .textarea{
+      width:100%;
+      border:1px solid var(--line);
+      background:#fafafa;
+      min-height:54px;
+      padding:0 16px;
+      color:var(--text);
+      outline:none;
+      border-radius:0;
+      transition:.2s ease;
+      -webkit-appearance:none;
+      appearance:none;
+    }
+
+    .textarea{
+      min-height:110px;
+      resize:vertical;
+      padding:14px 16px;
+    }
+
+    .input:focus,
+    .select:focus,
+    .textarea:focus{
+      border-color:var(--red);
+      background:#fff;
+      box-shadow:0 0 0 4px rgba(217,4,4,.10);
+    }
+
+    .successBox,
+    .errorBox{
+      margin-top:14px;
+      padding:14px 16px;
+      font-weight:800;
+      display:none;
+    }
+
+    .successBox{
+      background:#f5fbf6;
+      border:1px solid #d3ead7;
+      color:#275537;
+    }
+
+    .errorBox{
+      background:#fff3f1;
+      border:1px solid #f2c9c1;
+      color:#9a372b;
+    }
+
+    .privacyNote{
+      margin-top:12px;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+      font-weight:650;
+    }
+
+    .infoStrip{
+      position:relative;
+      z-index:2;
+      background:linear-gradient(180deg,#f7f7f8 0%, #fff 100%);
+      padding:78px 18px;
+      overflow:hidden;
+    }
+
+    .infoStrip::before{
+      content:"MOSANCI";
+      position:absolute;
+      top:18px;
+      left:50%;
+      transform:translateX(-50%);
+      font-size:clamp(72px,12vw,180px);
+      line-height:1;
+      font-weight:900;
+      letter-spacing:.08em;
+      color:rgba(217,4,4,.035);
+      pointer-events:none;
+      white-space:nowrap;
+    }
+
+    .infoInner{
+      width:min(1180px,100%);
+      margin:0 auto;
+      position:relative;
+      z-index:1;
+    }
+
+    .sectionTitle{
+      text-align:center;
+      margin:0 0 14px;
+      font-size:clamp(30px,4vw,44px);
+      font-weight:900;
+      letter-spacing:-.04em;
+      color:var(--ink);
+    }
+
+    .sectionTitle::after{
+      content:"";
+      display:block;
+      width:88px;
+      height:4px;
+      margin:14px auto 0;
+      border-radius:999px;
+      background:linear-gradient(90deg,var(--black),var(--red));
+    }
+
+    .sectionLead{
+      max-width:740px;
+      margin:0 auto 48px;
+      text-align:center;
+      color:#606873;
+      font-size:17px;
+      line-height:1.65;
+      font-weight:700;
+    }
+
+    .infoGrid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:24px;
+    }
+
+    .infoCard{
+      position:relative;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid rgba(217,4,4,.08);
+      padding:28px;
+      border-radius:18px;
+      box-shadow:0 16px 42px rgba(0,0,0,.08);
+      min-width:0;
+      transition:.22s ease;
+    }
+
+    .infoCard::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:radial-gradient(circle at var(--mx,50%) var(--my,0%), rgba(217,4,4,.14), transparent 35%);
+      opacity:0;
+      transition:.25s ease;
+      pointer-events:none;
+    }
+
+    .infoCard::after{
+      content:"";
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:0;
+      height:5px;
+      background:linear-gradient(90deg,var(--black),var(--red),#ff3535);
+      transform:scaleX(0);
+      transform-origin:left;
+      transition:.25s ease;
+    }
+
+    .infoCard:hover{
+      transform:translateY(-8px) scale(1.012);
+      border-color:rgba(217,4,4,.34);
+      box-shadow:0 28px 75px rgba(0,0,0,.16),0 16px 42px rgba(217,4,4,.16);
+    }
+
+    .infoCard:hover::before{opacity:1}
+    .infoCard:hover::after{transform:scaleX(1)}
+
+    .infoCard .icon{
+      width:58px;
+      height:58px;
+      display:grid;
+      place-items:center;
+      margin-bottom:18px;
+      border-radius:18px;
+      background:linear-gradient(135deg,var(--black),var(--red));
+      color:#fff;
+      font-weight:900;
+      font-size:20px;
+      box-shadow:0 12px 28px rgba(217,4,4,.24);
+      position:relative;
+      z-index:1;
+    }
+
+    .infoCard h3,
+    .infoCard p{
+      position:relative;
+      z-index:1;
+    }
+
+    .infoCard h3{
+      margin:0 0 10px;
+      font-size:19px;
+      font-weight:900;
+      color:var(--ink);
+    }
+
+    .infoCard p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.7;
+      font-weight:600;
+    }
+
+    .footer{
+      position:relative;
+      z-index:2;
+      overflow:hidden;
+      background:linear-gradient(135deg,#08090b 0%, #202226 55%, #690000 140%);
+      color:#f1f3f5;
+    }
+
+    .footer::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:radial-gradient(circle at 20% 0%, rgba(217,4,4,.22), transparent 32%);
+      pointer-events:none;
+    }
+
+    .footerInner{
+      position:relative;
+      z-index:1;
+      width:min(1180px,100%);
+      margin:0 auto;
+      padding:56px 18px;
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:34px;
+      align-items:start;
+    }
+
+    .footerBrand h3{
+      margin:0;
+      font-size:30px;
+      font-weight:900;
+      line-height:1.05;
+      letter-spacing:-.03em;
+    }
+
+    .footerBrand p{
+      margin:14px 0 0;
+      color:#cfd3d7;
+      line-height:1.7;
+      max-width:620px;
+      font-weight:600;
+    }
+
+    .contactList{
+      display:grid;
+      gap:12px;
+      justify-items:start;
+    }
+
+    .contactChip{
+      color:#fff;
+      background:rgba(255,255,255,.06);
+      padding:13px 14px;
+      font-weight:800;
+      border:1px solid rgba(255,255,255,.08);
+      width:100%;
+      max-width:360px;
+      overflow-wrap:anywhere;
+      transition:.2s ease;
+    }
+
+    .contactChip:hover{
+      background:rgba(255,255,255,.10);
+      transform:translateX(4px);
+    }
+
+    .footerBottom{
+      position:relative;
+      z-index:1;
+      border-top:1px solid rgba(255,255,255,.08);
+      color:#a2a9b1;
+      text-align:center;
+      padding:18px;
+      font-size:13px;
+      font-weight:700;
+    }
+
+    @media (max-width:980px){
+      .heroBody,
+      .infoGrid,
+      .footerInner{
+        grid-template-columns:1fr;
+      }
+
+      .heroImage{min-height:330px}
+      .miniStats{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+
+    @media (max-width:700px){
+      html,body{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+      }
+
+      .topHeader{
+        height:74px;
+        padding:0;
+        background:rgba(255,255,255,.92);
+        backdrop-filter:blur(12px);
+      }
+
+      .topHeader::after{
+        bottom:-20px;
+        height:20px;
+        opacity:.22;
+      }
+
+      .navwrap{
+        width:100%;
+        padding:0 14px;
+      }
+
+      .logoImage{
+        height:46px;
+        max-width:176px;
+        object-fit:contain;
+      }
+
+      .statusPill{
+        display:none;
+      }
+
+      .brandText{
+        display:grid;
+      }
+
+      .brandMain{
+        font-size:18px;
+        letter-spacing:.08em;
+      }
+
+      .brandSub{
+        font-size:8px;
+        letter-spacing:.24em;
+        padding-top:4px;
+        border-top-width:2px;
+      }
+
+      .ghostBtn{
+        min-height:42px;
+        padding:0 13px;
+        border-radius:14px;
+        font-size:13px;
+      }
+
+      .pageContent{
+        padding-top:92px;
+      }
+
+      .hero{
+        padding:0 10px 26px;
+      }
+
+      .hero::before,
+      .hero::after,
+      .particleLayer{
+        display:none;
+      }
+
+      .heroShell{
+        border-radius:22px;
+      }
+
+      .heroImage{
+        min-height:245px;
+        border-bottom-left-radius:22px;
+        border-bottom-right-radius:22px;
+        animation:none;
+        transform:none;
+      }
+
+      .imageBadge{
+        left:16px;
+        top:16px;
+        bottom:auto;
+        padding:11px 13px;
+        font-size:10.5px;
+        line-height:1.35;
+        max-width:calc(100% - 32px);
+        border-left-width:4px;
+        border-radius:14px;
+        animation:badgeFloatIn .7s .2s cubic-bezier(.2,1,.2,1) both, badgePremiumPulse 3.2s 1.1s ease-in-out infinite;
+      }
+
+      .heroBody{
+        margin-top:-28px;
+        padding:56px 16px 24px;
+        gap:22px;
+        border-top-left-radius:22px;
+        border-top-right-radius:22px;
+        background:linear-gradient(180deg,#f2f2f2 0%, #ebebeb 100%);
+        box-shadow:0 -14px 36px rgba(0,0,0,.12);
+      }
+
+      .liveBanner{
+        width:100%;
+        gap:12px;
+        padding:12px 14px;
+        margin-bottom:20px;
+      }
+
+      .liveText{
+        font-size:14px;
+        white-space:normal;
+        line-height:1.25;
+      }
+
+      .eyebrow{
+        font-size:11px;
+        padding:9px 12px;
+        margin-bottom:14px;
+      }
+
+      h1{
+        font-size:clamp(30px,10vw,42px);
+        line-height:1.02;
+        background:linear-gradient(90deg,#08090b 0%, var(--red) 52%, #08090b 100%);
+        -webkit-background-clip:text;
+        background-clip:text;
+      }
+
+      h1::after{
+        width:86px;
+        height:4px;
+        margin-top:14px;
+      }
+
+      .lead{
+        margin-top:16px;
+        font-size:15px;
+        line-height:1.7;
+      }
+
+      .heroActions{
+        margin-top:24px;
+        gap:12px;
+      }
+
+      .btn,
+      .formSubmit{
+        width:100%;
+        min-height:52px;
+        padding:0 16px;
+        border-radius:16px;
+      }
+
+      .miniStats{
+        grid-template-columns:1fr;
+        margin-top:22px;
+      }
+
+      .miniStat{
+        border-radius:18px;
+      }
+
+      .signupCard{
+        padding:22px 16px;
+        border-radius:20px;
+      }
+
+      .signupCard h2{
+        font-size:24px;
+      }
+
+      .input,
+      .select,
+      .textarea{
+        border-radius:12px;
+      }
+
+      .infoStrip{
+        padding:55px 16px;
+      }
+
+      .sectionTitle{
+        font-size:26px;
+      }
+
+      .sectionLead{
+        margin-bottom:28px;
+        font-size:15px;
+      }
+
+      .infoGrid{
+        gap:16px;
+      }
+
+      .infoCard{
+        padding:22px 20px;
+        border-radius:20px;
+      }
+
+      .infoCard:hover{
+        transform:none;
+      }
+
+      .footerInner{
+        padding:45px 16px;
+        gap:26px;
+      }
+
+      .footerBrand h3{
+        font-size:24px;
+      }
+
+      .footerBrand p{
+        font-size:14px;
+      }
+
+      .contactChip{
+        max-width:none;
+        border-radius:12px;
+      }
+
+      .footerBottom{
+        font-size:12px;
+        padding:16px 12px;
+      }
+    }
+
+
+    .mobileLaunchPopup{
+      display:none;
+    }
+
+    @media (max-width:700px){
+      .mobileLaunchPopup{
+        position:fixed;
+        left:14px;
+        right:14px;
+        bottom:calc(14px + env(safe-area-inset-bottom));
+        z-index:10060;
+        display:grid;
+        grid-template-columns:auto 1fr auto;
+        align-items:center;
+        gap:12px;
+        padding:14px 14px;
+        border-radius:22px;
+        background:
+          linear-gradient(135deg,rgba(8,9,11,.96),rgba(35,37,42,.96)),
+          radial-gradient(circle at 10% 0%,rgba(217,4,4,.42),transparent 42%);
+        color:#fff;
+        border:1px solid rgba(255,255,255,.12);
+        box-shadow:0 22px 60px rgba(0,0,0,.34),0 14px 36px rgba(217,4,4,.25);
+        backdrop-filter:blur(14px);
+        transform:translateY(130%);
+        opacity:0;
+        animation:mobilePopupIn .65s 1.15s cubic-bezier(.2,1,.2,1) forwards;
+      }
+
+      .mobileLaunchPopup.hide{
+        animation:mobilePopupOut .25s ease forwards;
+      }
+
+      .mobilePopupIcon{
+        width:44px;
+        height:44px;
+        border-radius:16px;
+        display:grid;
+        place-items:center;
+        background:linear-gradient(135deg,var(--red),#ff3535,var(--red-dark));
+        box-shadow:0 12px 28px rgba(217,4,4,.35);
+        font-weight:900;
+      }
+
+      .mobilePopupText strong{
+        display:block;
+        font-size:13px;
+        line-height:1.1;
+        font-weight:900;
+        letter-spacing:.08em;
+        text-transform:uppercase;
+      }
+
+      .mobilePopupText span{
+        display:block;
+        margin-top:4px;
+        color:rgba(255,255,255,.72);
+        font-size:12px;
+        line-height:1.35;
+        font-weight:700;
+      }
+
+      .mobilePopupBtn{
+        width:34px;
+        height:34px;
+        border:none;
+        border-radius:12px;
+        color:#fff;
+        background:rgba(255,255,255,.10);
+        display:grid;
+        place-items:center;
+        cursor:pointer;
+        font-size:20px;
+        line-height:1;
+      }
+
+      @keyframes mobilePopupIn{
+        to{transform:translateY(0);opacity:1}
+      }
+
+      @keyframes mobilePopupOut{
+        to{transform:translateY(130%);opacity:0}
+      }
+    }
+
+    @media (prefers-reduced-motion:reduce){
+      *,*::before,*::after{
+        animation-duration:.01ms !important;
+        animation-iteration-count:1 !important;
+        scroll-behavior:auto !important;
+        transition-duration:.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCS8JTKP"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="scrollProgress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="particleLayer" id="particleLayer" aria-hidden="true"></div>
+
+  <div class="mobileLaunchPopup" id="mobileLaunchPopup" role="status" aria-live="polite">
+    <div class="mobilePopupIcon">!</div>
+    <div class="mobilePopupText">
+      <strong>Bald verfügbar</strong>
+      <span>Die neue Mosanci Website startet bald.</span>
+    </div>
+    <button class="mobilePopupBtn" type="button" aria-label="Hinweis schließen" id="mobilePopupClose">×</button>
+  </div>
+
+  <header class="topHeader">
+    <div class="navwrap">
+      <a class="logoLock" href="#top" aria-label="Mosanci Innenausbau Start">
+        <img src="logo.png" alt="Mosanci Innenausbau Logo" class="logoImage">
+      </a>
+
+      <div class="navMeta">
+        <div class="statusPill">Bald online</div>
+        <a class="ghostBtn" href="#waitlist"><span>Vormerken</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pageContent" id="top">
+    <section class="hero">
+      <div class="heroShell">
+        <div class="heroImage">
+          <div class="imageBadge">MOSANCI 2026 WEBSITE LAUNCH</div>
+        </div>
+
+        <div class="heroBody">
+          <div>
+            <div class="liveBanner">
+              <div class="livePulseWrap">
+                <div class="liveDot"></div>
+              </div>
+              <div class="liveText">Neue Website in Vorbereitung</div>
+            </div>
+
+            <div class="eyebrow">Innenausbau · Renovierung · Qualität</div>
+
+            <h1>Bald verfügbar.</h1>
+
+            <p class="lead">
+              Mosanci steht für hochwertigen Innenausbau, präzise Handwerksarbeit und
+              zuverlässige Umsetzung. Unsere neue Website befindet sich in den letzten
+              Vorbereitungen. Tragen Sie sich jetzt ein und erfahren Sie als Erste,
+              sobald wir live gehen.
+            </p>
+
+            <div class="heroActions">
+              <a class="btn btnPrimary" href="#waitlist"><span>Zur Warteliste</span></a>
+              <a class="btn btnSecondary" href="mailto:kontakt@mosanci.de">Kontakt aufnehmen</a>
+            </div>
+
+            <div class="miniStats">
+              <div class="miniStat">
+                <strong>Heinsberg</strong>
+                <span>Regional & persönlich</span>
+              </div>
+              <div class="miniStat">
+                <strong>Innenausbau</strong>
+                <span>Sauber, präzise, zuverlässig</span>
+              </div>
+              <div class="miniStat">
+                <strong>Launch-News</strong>
+                <span>Direkt per E-Mail</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="signupCard" id="waitlist">
+            <h2>Jetzt vormerken</h2>
+            <p>
+              Hinterlassen Sie Ihre E-Mail-Adresse und wir informieren Sie, sobald die neue Mosanci Website live ist.
+            </p>
+
+            <form
+              id="waitlistForm"
+              class="formRow"
+              action="https://formspree.io/f/mnjogwon"
+              method="POST"
+            >
+              <input type="hidden" name="_subject" value="Neue Wartelisten-Anfrage von mosanci.de">
+              <input type="hidden" name="_language" value="de">
+              <input type="hidden" name="_captcha" value="false">
+
+              <input class="input" type="text" name="name" placeholder="Name oder Firma" autocomplete="name">
+              <input class="input" type="email" name="email" placeholder="E-Mail-Adresse" autocomplete="email" required>
+
+              <select class="select" name="interest">
+                <option value="">Leistungsbereich auswählen</option>
+                <option>Trockenbau</option>
+                <option>Fliesen</option>
+                <option>Bodenbelagsarbeiten</option>
+                <option>Malerarbeit</option>
+                <option>Dämmtechnik</option>
+                <option>Innentürmontage</option>
+                <option>Allgemeine Anfrage</option>
+              </select>
+
+              <textarea class="textarea" name="message" placeholder="Optional: Kurz etwas zu Ihrem Projekt schreiben"></textarea>
+
+              <button class="formSubmit" type="submit"><span>Benachrichtigen</span></button>
+            </form>
+
+            <div class="successBox" id="successBox">
+              Vielen Dank. Ihre Anfrage wurde erfolgreich gesendet.
+            </div>
+
+            <div class="errorBox" id="errorBox">
+              Die Anfrage konnte gerade nicht gesendet werden. Bitte versuchen Sie es erneut.
+            </div>
+
+            <div class="privacyNote">
+              Mit dem Absenden erklären Sie sich damit einverstanden, dass wir Ihre Angaben zur Kontaktaufnahme
+              im Zusammenhang mit dem Website-Start verwenden.
+            </div>
+          </aside>
+        </div>
+        <div style="margin-top:40px;text-align:center;max-width:900px;margin-left:auto;margin-right:auto;color:#606873;font-weight:600;line-height:1.8;">
+          Mosanci betreut Kunden in Heinsberg, Oberbruch, Geilenkirchen,
+          Hückelhoven, Erkelenz, Wassenberg, Gangelt, Selfkant sowie
+          in vielen weiteren Regionen Nordrhein-Westfalens.
+        </div>
+      </div>
+    </section>
+
+    <section class="infoStrip">
+      <div class="infoInner">
+        <h2 class="sectionTitle">Innenausbau in Heinsberg & Nordrhein-Westfalen</h2>
+        <p class="sectionLead">
+          Mosanci ist Ihr Ansprechpartner für hochwertigen Innenausbau in Heinsberg,
+          Oberbruch und der gesamten Region Nordrhein-Westfalen. Unsere Leistungen
+          umfassen Trockenbau, Fliesenarbeiten, Bodenbeläge, Malerarbeiten,
+          Dämmtechnik und professionelle Renovierungen für private und gewerbliche
+          Projekte. Die neue Website startet in Kürze.
+        </p>
+
+        <div class="infoGrid">
+          <article class="infoCard">
+            <div class="icon">01</div>
+            <h3>Trockenbau Heinsberg</h3>
+            <p>
+              Fachgerechte Trockenbauarbeiten für Wohnungen, Häuser,
+              Büros und Gewerbeobjekte im Kreis Heinsberg.
+            </p>
+          </article>
+
+          <article class="infoCard">
+            <div class="icon">02</div>
+            <h3>Fliesen & Bodenbeläge</h3>
+            <p>
+              Präzise Verlegung von Fliesen, Vinyl, Laminat und weiteren
+              Bodenbelägen für moderne Wohn- und Geschäftsräume.
+            </p>
+          </article>
+
+          <article class="infoCard">
+            <div class="icon">03</div>
+            <h3>Renovierung & Innenausbau NRW</h3>
+            <p>
+              Individuelle Lösungen für Sanierungen, Modernisierungen und
+              hochwertigen Innenausbau in Heinsberg und Umgebung.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footerInner">
+      <div class="footerBrand">
+        <h3>Mosanci Innenausbau<br>Bald online.</h3>
+        <p>
+          Professioneller Innenausbau mit Fokus auf Präzision, Zuverlässigkeit und sauberer Ausführung.
+          Tragen Sie sich ein und erhalten Sie eine Nachricht, sobald die neue Website online ist.
+        </p>
+      </div>
+
+      <div class="contactList">
+        <a class="contactChip" href="tel:+491623148596">+49 (0) 162 3148596</a>
+        <a class="contactChip" href="mailto:kontakt@mosanci.de">kontakt@mosanci.de</a>
+        <div class="contactChip">52525 Oberbruch, Heinsberg</div>
+      </div>
+    </div>
+
+    <div class="footerBottom">© 2026 Mosanci Innenausbau. Alle Rechte vorbehalten.</div>
+  </footer>
+
+  <script>
+    const progress = document.getElementById('scrollProgress');
+    const particleLayer = document.getElementById('particleLayer');
+
+    function updateProgress(){
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progressValue = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progress.style.width = progressValue + '%';
+    }
+
+    window.addEventListener('scroll', updateProgress, { passive:true });
+    updateProgress();
+
+    function createParticles(){
+      if (!particleLayer || window.matchMedia('(max-width: 700px)').matches) return;
+
+      for (let i = 0; i < 26; i++){
+        const particle = document.createElement('span');
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDuration = (9 + Math.random() * 10) + 's';
+        particle.style.animationDelay = (Math.random() * 8) + 's';
+        particle.style.opacity = (0.18 + Math.random() * 0.38).toString();
+        particle.style.transform = 'scale(' + (0.7 + Math.random() * 1.4) + ')';
+        particleLayer.appendChild(particle);
+      }
+    }
+
+    createParticles();
+
+    document.querySelectorAll('.infoCard, .signupCard').forEach((card) => {
+      card.addEventListener('pointermove', (e) => {
+        const rect = card.getBoundingClientRect();
+        card.style.setProperty('--mx', (e.clientX - rect.left) + 'px');
+        card.style.setProperty('--my', (e.clientY - rect.top) + 'px');
+      });
+    });
+
+    const mobilePopup = document.getElementById('mobileLaunchPopup');
+    const mobilePopupClose = document.getElementById('mobilePopupClose');
+
+    if (mobilePopup && mobilePopupClose){
+      mobilePopupClose.addEventListener('click', () => {
+        mobilePopup.classList.add('hide');
+      });
+
+      window.setTimeout(() => {
+        if (mobilePopup && !mobilePopup.classList.contains('hide')){
+          mobilePopup.classList.add('hide');
+        }
+      }, 8500);
+    }
+
+    const form = document.getElementById('waitlistForm');
+    const successBox = document.getElementById('successBox');
+    const errorBox = document.getElementById('errorBox');
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      successBox.style.display = 'none';
+      errorBox.style.display = 'none';
+
+      const originalButtonText = submitButton.innerHTML;
+      submitButton.disabled = true;
+      submitButton.innerHTML = '<span>Wird gesendet...</span>';
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          form.reset();
+          successBox.style.display = 'block';
+          successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else {
+          errorBox.style.display = 'block';
+        }
+      } catch (error) {
+        errorBox.style.display = 'block';
+      } finally {
+        submitButton.disabled = false;
+        submitButton.innerHTML = originalButtonText;
+      }
+    });
+  </script>
+</body>
+</html>
